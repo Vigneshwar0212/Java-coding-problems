@@ -15,4 +15,41 @@ public class Main{
 }
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Even and odd number count:
 
+public class Main{
+    public static void main(String[] args){
+        
+        int num = 2561;
+        
+        int count = 0;
+        int even_count = 0;
+        int odd_count = 0;
+        
+        //checks the numbers for even or odd.
+        if (num%2==0){
+            System.out.println("Entered number is even - "+num);
+        }
+        else{
+            System.out.println("Entered number is odd - "+num);
+        }
+        
+        while(num>0){
+            if(num%2 == 0){
+                even_count++;
+            }
+            else{
+                odd_count++;
+            }
+            num = num/10;  //the num will get updates like num = 2561 -> 2561/10=256 -> num = 256 -> 256/10=25 -> num = 25 -> 25/10=2 -> num=2/10= condition fails.
+            count++;
+        }
+        
+        
+        System.out.println("no. of even integer is: "+even_count);
+        System.out.println("no. of odd integer is: "+odd_count);
+        System.out.println("the no. of integer is: "+count);
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
