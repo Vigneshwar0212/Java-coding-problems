@@ -1,1 +1,15 @@
+//Method on logic own concept
+//charAt method
 
+public class Main{
+    
+    public static void main(String[] args){
+        String ch = "apple banana carrot";
+        for (int i = ch.length() - 1; i>=0; i-- ){
+            System.out.print(ch.charAt(i));
+        }
+        
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
