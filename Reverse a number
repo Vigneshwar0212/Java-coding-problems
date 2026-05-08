@@ -47,6 +47,9 @@ public class Main
 }
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Method 3 (reverse the entire string)
+//Stringbuilder method
+
 import java.util.Scanner;
 
 public class Main
@@ -56,8 +59,7 @@ public class Main
 	    System.out.print("Enter the number: ");
 	    int num = sc.nextInt();
 	    
-	    //Method 3 (reverse the entire string)
-	    //Stringbuilder method
+	   
 	   
 		StringBuilder sbd = new StringBuilder();
 	    sbd.append(num);
