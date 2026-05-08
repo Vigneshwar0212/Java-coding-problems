@@ -25,3 +25,21 @@ public class Main{
 }
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//String
+
+public class Main{
+    public static void main(String[] args){
+        String str = "hello";
+        String org_str = str;
+        String rev = "";
+        int len = str.length();
+        for(int i = len-1; i>=0; i-- ){
+            rev = rev+str.charAt(i);
+        }
+        if(org_str.equals(rev)){       //equals method will compare the exact characters in the string and return
+            System.out.println("Entered String is a palindrome "+org_str);
+        }else{
+            System.out.println("Entered String is not a palindrome "+org_str);
+        }
+    }
+}
