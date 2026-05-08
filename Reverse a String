@@ -47,3 +47,18 @@ public class Main{
         System.out.println("Reversed string is: "+rev);
     }
 }
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//using a StringBuffer method
+
+public class Main{
+    
+    public static void main(String[] args){
+        String str = "abcdefgh";
+        
+        
+        StringBuffer sbr = new StringBuffer(str);
+        StringBuffer rev = sbr.reverse();
+        System.out.println("Reversed string is: "+rev);
+    }
+}
