@@ -7,16 +7,45 @@ public class Main
 	    System.out.print("Enter the number: ");
 	    int num = sc.nextInt();
 	    
-	    // 1st Method:
+	    // 1st Method: (does not reverse the number which contain 0 as a last digit -> input=1230 -> output=321)
 	    //using algorithm
 	    
 	    int rev = 0;
 	    
 	    while (num!=0){
-	        rev = rev*10 + num %10;    // rev = 0 -> 0*10 = 0 + 1234 % 10 = 4 -> rev = 4, 4*10, 40+123 % 10 = 40+3 = 43 -> rev = 43*10=430 + 12%10 = 430+2 =432 -> rev = 432*10 = 4320+12%10 = 4321;
-	        num = num/10;     //num = entered number ex: 1234 -> 1234/10 = 123 -> num = 123 / 10 = 12 -> num = 12/10=1 -> num = 1/10 = 0; condition fails
-	    }
+	        
+			rev = rev*10 + num %10;
+// rev = 0 -> 0*10 = 0 + 1234 % 10 = 4 -> rev = 4, 4*10, 40+123 % 10 = 40+3 = 43 -> rev = 43*10=430 + 12%10 = 430+2 =432 -> rev = 432*10 = 4320+12%10 = 4321;
+	       
+			num = num/10; 
+//num = entered number ex: 1234 -> 1234/10 = 123 -> num = 123 / 10 = 12 -> num = 12/10=1 -> num = 1/10 = 0; condition fails
+	   
+		}
+		System.out.println("Reverse of the entered number: "+rev); 
+	}
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		// Method 2 - (used to reverse the entire string including the 0 as a last digit)
+		//StringBuffer method
+		// String.valueOf(num) - used to convert the data type of the value, here the integer num is being converted to String using this method.
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner (System.in);
+	    System.out.print("Enter the number: ");
+	    int num = sc.nextInt();
+	    
+	    StringBuffer sb = new StringBuffer(String.valueOf(num));
+	    StringBuffer rev = sb.reverse();
 	    System.out.println("Reverse of the entered number: "+rev);
 	    
 	}
 }
+
+	    
+
+		
