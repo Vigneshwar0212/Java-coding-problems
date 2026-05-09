@@ -107,3 +107,37 @@ public class Main
 }
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Finding Missing number in array
+
+/* 1. Array should not contain duplicates
+   2. Array should be in a range like (1-9 or 12-19, etc)
+   3. Array should not be sorted in asc or des  */
+
+import java.util.Arrays;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int a[] = {1,2,3,4,6,7,8,9};
+	    int sum1 = 0;
+	    int sum2 = 0;
+	    int len = a.length;
+	    
+	    for (int i = 0; i<len; i++){
+	        sum1 = sum1 + a[i];
+	    }
+	    System.out.println("Sum of numbers in array: "+sum1);
+	    
+	    for (int i = 0; i<=9; i++){
+	        sum2 = sum2 + i;
+	    }
+	    System.out.println("Sum of numbers in range: "+sum2);
+	    
+	    int mis_num = sum2-sum1;
+	    System.out.println("The missing number in array is: "+mis_num);
+	}
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
