@@ -128,7 +128,7 @@ public class Main
 	    }
 	    System.out.println("Sum of numbers in array: "+sum1);
 	    
-	    for (int i = 0; i<=9; i++){
+	    for (int i = 0; i<=9; i++){   // we can also use this line -> for (int i = a[0]; i<=a[len-1]; i++){
 	        sum2 = sum2 + i;
 	    }
 	    System.out.println("Sum of numbers in range: "+sum2);
