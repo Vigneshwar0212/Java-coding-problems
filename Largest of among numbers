@@ -47,7 +47,7 @@ public class Main {
         int second = num[len-2];  // print like len = 16 -> second largest number = 16-2(2 is because we need to print the 14th index value) -> len = 14
         int third = num[len-3];  // similar to the above line as if we want to print the number usually we use num[14] - index value, same logic is applied
         
-        System.out.println(Arrays.toString(num));   //print all the numbers in the array 
+        System.out.println(Arrays.toString(num));   //print all the numbers in the array -> as array was sorted to ascending order numbers will be printed in asce
         System.out.println(len);
         System.out.println("Second largest number in the array is: "+second);
         System.out.println("Third largest number in the array is: "+third);
