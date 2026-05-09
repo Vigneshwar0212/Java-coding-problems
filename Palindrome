@@ -43,3 +43,29 @@ public class Main{
         }
     }
 }
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Arrays comparison
+
+import java.util.Arrays;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    int num1[] = {1,2,3,4,5,6,7,8,9};
+	    int num2[] = {1,2,3,4,5,6,7,8,9};
+	    boolean status = Arrays.equals(num1, num2);
+	    
+	    if(status == true){    //in array using == for comparison will compare the memory address of the arrays. -> so in array for comparing .equals method will be used
+	        System.out.println("Same");
+	    }
+	    else{
+	        System.out.println("Not same");
+	    }
+	    
+	    
+	}
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
