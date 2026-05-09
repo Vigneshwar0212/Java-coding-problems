@@ -16,3 +16,18 @@ public class Main
 }
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//using ternary operator
+
+public class Main {
+    public static void main(String[] args) {
+        int a = 25, b = 8, c = 63;
+        
+        int largest1 = a>b?a:b; //here it is ternary  operator -> if a>b then a will be printed, else b will be printed.
+        int largest2 = c>largest1?c:largest1; //similarly it works as above
+        
+        int largest = c>(a>b?a:b)?c:(a>b?a:b); // can also be written in a single statement.
+        
+        System.out.println("Greatest of all is: "+largest2);
+        System.out.println("Greatest of all is: "+largest);   // same output will be printed just typed this statement for example
+    }
+}
