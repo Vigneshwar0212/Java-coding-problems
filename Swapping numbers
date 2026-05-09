@@ -56,3 +56,20 @@ public class Main
 }
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//using the single statement
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    int a = 20, b = 10;
+	    System.out.println("Before swapping the numbers: a= "+a+" b= "+b);
+	    
+	    b = a+b - (a=b); /* execution starts from right to left and first a=b -> the value of b will be assigned to a. So now, a=10 -> first
+	    it will assign value separately then it begins to perform the execution here again (a=20,b=10) a+b = 30 -> then perform the execution
+        as b = 30 - 10 -> b =20*/
+	    
+	    System.out.println("After swapping the numbers: a= "+a+" b= "+b);
+	}
+	
+}
