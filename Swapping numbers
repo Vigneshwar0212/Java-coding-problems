@@ -1,0 +1,19 @@
+//using third variable (t)
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    int a = 20, b = 30;
+	    System.out.println("Before swapping the numbers: a= "+a+" b= "+b);
+	    
+	    int t = a;    //t=20 will assign the value accordingly
+	    a = b;   // a=30
+	    b = t;   // b=20
+	    
+	    System.out.println("After swapping the numbers: a= "+a+" b= "+b);
+	}
+	
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
