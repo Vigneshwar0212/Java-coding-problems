@@ -63,9 +63,40 @@ public class Main
 	    else{
 	        System.out.println("Not same");
 	    }
-	    
-	    
 	}
 }
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Arrays comparison
+//Method 2
+
+import java.util.Arrays;
+
+public class Main
+{
+	public static void main(String[] args) {
+
+		int num1[] = {1,2,3,4,5,6,7,8,9};
+		int num2[] = {1,2,3,4,5,6,7,8,9};
+		boolean status;
+		
+		if (num1.length == num2.length){ // compares the length of the array
+		    status = true;    // changes the status to true
+		    for (int i = 0; i<num1.length; i++){   
+		        if (num1[i] != num2[i]){   // if the length are equal -> the each integer according to the index will be matched -> if they are not equal -> status = false
+		            status = false;
+		        }
+		    }
+		}
+		else{
+		    status = false;   //if the length are not equal in the first if statement -> status = false
+		}
+		if (status ==  true){   // if all the above conditions satisfy -> status is equal to true at the end -> array are equal will be printed
+		    System.out.println("Arrays are equal");
+		}
+		else{
+		    System.out.println("Arrays are not equal");
+		}
+	}
+}
+
