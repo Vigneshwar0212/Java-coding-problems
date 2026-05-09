@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        
+        int a = 1234; //  a is assigned with a value of integer
+        double tc = (double)a;   // converting this integer value of a to double tc with a decimal value 
+        char s = 'E';  // assigned a char value of E to s.
+        int ascii = (int) s;  //converting this char value of s to int value ascii
+        
+        
+        System.out.println(a);
+        System.out.println(tc);
+        System.out.println(s);
+        System.out.println(ascii);
+    }
+}
