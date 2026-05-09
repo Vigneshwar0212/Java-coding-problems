@@ -49,7 +49,7 @@ public class Main {
         int len = a.length;
         
         for(int i:a){
-            sum = sum += i;
+            sum = sum += i;     // we can use this line alternative - sum = sum+i;
         }
         System.out.println(sum);
     }
