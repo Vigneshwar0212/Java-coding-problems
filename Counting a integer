@@ -79,3 +79,31 @@ public class Main
 }
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Array
+// odd and even number identification
+
+// identify odd and even numbers in a array
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    int num[] = {1,2,3,4,5,6,7,8,9};
+	    
+	    System.out.print("Even no. in an array....");
+	    
+	    for(int i:num){
+	        if(i%2!=1){
+	        System.out.print(i+", ");
+	    }}
+	    System.out.println(); //for a new line space
+	    System.out.print("Odd no. in an array....");
+	    
+	    for(int j :num){
+	        if(j%2!=0){
+	        System.out.print(j+", ");
+	    }}
+	}
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
