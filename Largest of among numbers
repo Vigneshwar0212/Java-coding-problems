@@ -53,3 +53,24 @@ public class Main {
         System.out.println("Third largest number in the array is: "+third);
     }
 }
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// used to find the second largest number 
+
+public class Main {
+	public static void main(String[] args) {
+		int a = 10, b = 25, c = 6;
+		
+		if((a>b && a<c) || (a>c && a<b)){    // ((10>25 && 10<6)  || (10>6 && 10<25))  && - true if both condition is true 
+		System.out.println(a+" Second largest number");  //  || - true if any one or both of the condition is true
+		}
+		else if((b>a && b<c) || (b>c && b<a)){  //((25>10 && 25<6) || (25<6 && 25<10))
+		    System.out.println(b+" Second largest number");
+		}
+		else{
+		    System.out.println(c+" Second largest number");
+		}
+		    
+	}
+}
+
