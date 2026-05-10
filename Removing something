@@ -1,1 +1,18 @@
+//Removing special characters in a string using replaceAll method
+//replaceAll method
 
+import java.util.ArrayList;
+
+public class Main{
+    public static void main(String[] args){
+        String str = "asdgvhav asdova v 4343.43 ADBAB Afbabab !@#$^&*^%$@$%%^$<>}{+_~";
+        
+        String s = str.replaceAll("[^a-zA-Z0-9 ]", ""); //("what are need to include in the string", "what should be replaced in the place of unwanted characters")
+        String n = str.replaceAll("[^a-zA-Z0-9 ]", "1");
+        
+        System.out.println(s);
+        System.out.println(n);
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
