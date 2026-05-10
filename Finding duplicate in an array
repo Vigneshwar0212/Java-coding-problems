@@ -1,0 +1,28 @@
+//Finding duplicate values in Arrays
+
+import java.util.Arrays;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    String arr[] = {"Apple", "Banana", "Apple", "Carrot", "banana", "Dragon fruit", "Elephant"};
+	    boolean status = false;    //assigning the status value to false
+	    
+	    
+	    for(int i = 0; i<arr.length; i++){    //checks for the specific value ex: apple as index is set to 0
+	        for(int j = i+1; j<arr.length; j++){   //compares the value with the above value -> appple with the remaining values (int j = i+1) it ensure to compare the value with remaining values
+	            if(arr[i].equals(arr[j])){              // comparison is case sensitive
+	            System.out.println("Duplicate values: "+arr[i]);
+	            status = true;   //if the above condition satisfy -> value of status will be changed to true
+	            }
+	        }
+	    }
+	    if(status == false){    // if no duplicate found and the above condition is not satisfy -> if status remains false then below value will be printed
+	        System.out.println("No duplicate value found. ");
+	    }
+	    
+	}
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
