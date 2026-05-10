@@ -52,3 +52,22 @@ public class Main{
 }
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Counting the occurance of the character in a given String
+//using replaceAll method
+
+import java.util.ArrayList;
+
+public class Main{
+    public static void main(String[] args){
+        String str = "Apple banana carrot dragonfruit elephant";
+        
+        int tot = str.length();
+        int tafterremove = str.replaceAll("e","").length();
+        int count = tot - tafterremove;
+        
+        System.out.println("Occurance of e in the given string is: "+count);
+        
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
