@@ -1,0 +1,20 @@
+//Counting the words in a given string
+
+import java.util.ArrayList;
+
+public class Main{
+    public static void main(String[] args){
+        
+        String str = "Hello welcome to java programming";
+        int count = 1;
+        
+        for (int i =0; i<str.length()-1; i++){
+            if((str.charAt(i) == ' ') && (str.charAt(i+1) != ' ')){  //it states that ((str should contain space) && (next index should not contain space))
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
