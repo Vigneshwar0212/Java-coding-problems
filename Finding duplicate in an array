@@ -27,3 +27,64 @@ public class Main
 }
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Using HashSet method
+//Set method does not include/add duplicate values -> all value should be distinct
+//Method 2
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.HashSet;
+
+public class Main{
+    public static void main(String[] args){
+        String arr[] = {"Apple", "Banana", "Apple", "Carrot", "banana", "Dragon fruit", "Elephant"};  //declaring array
+        
+        HashSet<String> fruits = new HashSet();  // declaring HashSet method
+        
+        boolean status = false;
+        for(String fin:arr){    //assigning the array value to fin 
+            
+            if(fruits.add(fin) == false){    //validating that if duplicate found while adding values to the HashSet fruits -> false will be printed -> if condition is true print the below line
+                System.out.println("Duplicate value is: "+fin);
+                status = true;    //changing the status to true
+            }
+        }
+        if(status == false){    //if no duplicate found, still if the status value is false then no duplicate is founded statement will be printed
+            System.out.println("No duplicate found.");
+        }
+        
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Using HashSet method
+//Set method does not include/add duplicate values -> all value should be distinct
+//Example for understanding HashSet
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.HashSet;
+
+public class Main{
+    public static void main(String[] args){
+        String arr[] = {"Apple", "Banana", "Apple", "Carrot", "banana", "Dragon fruit", "Elephant"};  //declaring array
+        
+        HashSet<String> fruits = new HashSet();  // declaring HashSet method
+        
+        for (String i:arr){
+            System.out.println(fruits.add(i));  //adding the array values i to the HashSet fruits
+        }
+        
+    }
+}
+
+//output
+ true
+ true
+ false
+ true
+ true
+ true
+ true
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
