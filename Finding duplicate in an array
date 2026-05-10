@@ -1,4 +1,5 @@
 //Finding duplicate values in Arrays
+//Method 1
 
 import java.util.Arrays;
 
