@@ -35,3 +35,20 @@ public class Main{
 }
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Removing special characters in a string using replaceAll method
+//replaceAll method
+//Removing whitespaces
+
+import java.util.ArrayList;
+
+public class Main{
+    public static void main(String[] args){
+        String str = "asdgvhav asdova v 4343.43 ADBAB Afbabab !@#$^&*^%$@$%%^$<>}{+_~";
+        String s = str.replaceAll("\\s", ""); //remove the whitespaces in the string and if we want to replace the spaces we can specify it in the second ""
+        System.out.println("Before removing whitespaces: "+str);
+        System.out.println("After removing whitespaces: " +s);
+        
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
