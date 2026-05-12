@@ -121,3 +121,36 @@ public class Main
 	
 }
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//comparing the array
+//using boolean value
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		String a[] = {"a", "b", "c"};
+		String b[] = {"a", "b"};
+		boolean status = false;
+
+		if(a.length == b.length) {
+            status = true;
+
+			if(Arrays.equals(a,b)) {
+				System.out.println("Array are same");
+				status = true;
+			}
+			else{
+			    status = false;
+			
+			}
+		}if(status == false){
+		    System.out.println("Arrays are not same");
+		}
+	}
+
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
