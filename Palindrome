@@ -100,3 +100,24 @@ public class Main
 	}
 }
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Comparing an array
+
+import java.util.Arrays;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String a[] = {"a", "b", "c"};
+	    String b[] = {"a", "b", "c"};
+	    
+		if(Arrays.equals(a,b)){
+	        System.out.println("Array are same");
+	    }
+	    else{
+	        System.out.println("Arrays are not same");
+	    }
+	}
+	
+}
+
