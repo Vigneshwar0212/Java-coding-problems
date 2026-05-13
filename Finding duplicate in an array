@@ -126,23 +126,24 @@ import java.util.HashSet;
 public class Main {
 	public static void main(String[] args) {
 		int a[] = { 1, 2, 3, 1, 4, 5, 2 };
-		Arrays.sort(a);
+		Arrays.sort(a);   //sort the array in ascending order a[] = {1,1,2,2,3,4,5}
 		
 		for (int i=0; i<a.length; i++) {
-			boolean status = false;
-			for(int j = i+1; j<a.length; j++) {
-				if(a[i]==a[j]) {
+			boolean status = false;  //initializing the boolean value to false, and for loop will check each element in the array
+			for(int j = i+1; j<a.length; j++) {  //the inner for loop will match all the values with the i values
+				if(a[i]==a[j]) { //if any value found to be equal then the status will be changed to true
 					status = true;
-				}
-				
+				}   /* a[0] = 1 check with all the values like j = a[i+1] -> so a[1] = 2. 1!=2 -> 1!=3 -> 1==1 so 
+				status = true -> again continues..   */
+				       
 			}
 			if(status == false) {
 				System.out.print(a[i]+" ");
 			}
+			//System.out.println(status);  //can be used to understand the program..
 		}
 		
 	}
 }
-
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
