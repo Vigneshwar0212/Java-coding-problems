@@ -78,7 +78,7 @@ import java.util.Arrays;
 
 public class Arraylist {
 	public static void main(String[] args) {
-String str = "Orange";
+        String str = "Orange";
 		char b[] = str.toCharArray();
 		Arrays.sort(b);
 		for (int i=0; i<b.length; i++) {
