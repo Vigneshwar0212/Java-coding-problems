@@ -3,12 +3,14 @@
 
 package SampleTest;
 
+package SampleTest;
+
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Arraylist {
 	public static void main(String[] args) {
-		int a[] = { 100,500,800,700,300,400,900 };
+		int a[] = {100,500,800,700,300,400,900};
 		
 		System.out.println("Before sorting..");
 		System.out.println(Arrays.toString(a)); //used to print the array values without using the for loops for printing the values
@@ -21,7 +23,13 @@ public class Arraylist {
 			System.out.print(a[i]+" ");
 		} */
 		
-		System.out.println(Arrays.toString(a)); 
+		//enhanced for loop
+		
+		/* for (int i :a) {
+			System.out.print(i+" ");
+		} */
+		
+		System.out.println(Arrays.toString(a));
 	}
 }
 
