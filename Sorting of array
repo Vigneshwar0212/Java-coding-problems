@@ -88,3 +88,27 @@ public class Arraylist {
 }
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// sorting an integer
+
+package SampleTest;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
+public class Arraylist {
+	public static void main(String[] args) {
+		int a = 864634665;
+		System.out.println("Before sorting");
+		System.out.println(a);
+		
+		String s = String.valueOf(a);  //converting the int value to string
+		char b[] = s.toCharArray();    ////converting the string value to array b[]
+		Arrays.sort(b);
+		
+		System.out.println("After sorting");
+		System.out.println(b);
+		
+	}
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
