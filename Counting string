@@ -107,3 +107,30 @@ public class Arraylist {
 }
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//replace() & replaceAll() method
+
+package SampleTest;
+
+public class Arraylist {
+	public static void main(String[] args) {
+		String str = "welcome to java programming";
+		String str1 = "welcome";
+		String str2 = "Welcome";
+		
+		//replace()	method:
+		/* replaces: characters OR exact string values*/
+		System.out.println(str.replace("welcome", "hello")); //hello to java programming -> "" - because string
+		System.out.println(str.replace('a', 'x'));  //welcome to jxvx progrxmming -> '' - because character
+		
+	    //replaceAll();
+		/* replaceAll() replaces text using Regular Expressions (Regex).*/
+		System.out.println(str2.replaceAll("[a-z]", "")); //W -> it will replace all the element within the 1st "" and replace it with the elements in the 2nd ""
+		System.out.println(str2.replaceAll("[^a-z]", ""));//elcome -> ^ will inverse the commands like expect the elements after ^ this will printed, all other will be replaced with elements in 2nd ""
+		
+		System.out.println(str.replaceAll("\\s", "-")); //welcome-to-java-programming -> replace spaces with -
+		
+		
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
