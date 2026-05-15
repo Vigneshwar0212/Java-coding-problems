@@ -1,3 +1,5 @@
+//enhance for loop will not work for reversing the elements
+
 import java.util.Scanner;
 
 public class Main
