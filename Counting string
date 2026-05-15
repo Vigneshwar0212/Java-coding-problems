@@ -64,4 +64,46 @@ public class Arraylist {
 }
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//string methods
 
+package SampleTest;
+
+public class Arraylist {
+	public static void main(String[] args) {
+		String str = "welcome";
+		String str1 = "welcome";
+		String str2 = "Welcome";
+		
+		//contains("") method:
+		System.out.println(str.contains("wel"));  //true
+		System.out.println(str.contains("come")); //true
+		System.out.println(str.contains("wlc"));  //false -> character should match the string -> as same as above printing statements
+		System.out.println(str.contains("Wel"));  //false -> strings are case sensitive
+		
+		
+		//equals("")method:
+		/* look for Same characters, Same order, Same case (uppercase/lowercase) */
+		System.out.println(str.equals("welcome")); //true
+		System.out.println(str.equals("wel")); //false -> this method will compare the exact values among the two
+		System.out.println(str.equals(str1)); //true
+		System.out.println(str.equals(str2)); //false
+		
+		
+		//equalsIgnoreCase() method:  -> check for equality but it is not case sensitivity
+		System.out.println(str.equalsIgnoreCase("Welcome")); //true
+		System.out.println(str.equalsIgnoreCase(str2)); //true
+		System.out.println(str.equalsIgnoreCase("wel"));  //false
+		
+		
+		//matches("") method:
+		System.out.println(str.matches("[a-zA-Z ]+")); //true
+		System.out.println(str.matches("[A-Z]+")); //false -> case sensitive
+		System.out.println(str.matches("[0-9]+")); //false
+		/* checks the string whether the string has the elements listed in the match method -> 
+		   '+' symbol at the end is used to check all elements -> if '+' is not used then this method check for the 1st character in a string */	
+		
+		
+	}
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
