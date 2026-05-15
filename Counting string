@@ -19,6 +19,7 @@ public class Main{
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // finding the length of a string
+//length() method
 
 package SampleTest;
 
@@ -36,3 +37,31 @@ public class Arraylist {
 }
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//removing the spaces from a string on either side (left and rigth)
+//trim() & replaceAll("", "") method
+
+package SampleTest;
+
+public class Arraylist {
+	public static void main(String[] args) {
+		String str = "   Welcome   ";
+		System.out.println("Before trimming the string: "+str);
+		System.out.println("After trimming the string: "+str.trim());
+		
+		/*  Output:
+		    Before trimming the string:    Welcome   
+			After trimming the string: Welcome */
+ 
+		String a = "   Hello     ";
+		System.out.println("Before removing space: "+a);
+		String final_a = a.replaceAll("\\s", "");
+		System.out.println("After removing space: "+final_a);
+		
+		/*  Output:
+	    Before removing space:    Hello     
+		After removing space: Hello */
+	}
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
