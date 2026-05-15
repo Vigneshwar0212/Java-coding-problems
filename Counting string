@@ -18,3 +18,21 @@ public class Main{
 }
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// finding the length of a string
+
+package SampleTest;
+
+public class Arraylist {
+	public static void main(String[] args) {
+		String str = "Welcome";
+		int len = str.length();
+		System.out.println(len);  //finding length of a string by declaring a variable to store the length of the string
+		
+		String a = "Hello";
+		System.out.println(a.length());  //directly printing the length of the string
+		
+		System.out.println("JavaProgram".length());   //it is also a direct method to find the length of a string 
+	}
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
