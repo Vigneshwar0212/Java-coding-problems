@@ -138,8 +138,8 @@ public class Arraylist {
 package Selenium_test;
 public class Arraylist {
 	public static void main(String[] args) {
-		
-		String str = "Congratulations";
+		                                       // C o n g r a t u l a t  i  o  n  s
+		String str = "Congratulations";        // 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
 	    String a = str.substring(0,5);  //it is used to print a string using index str.substring(staring index, ending index+1)
 	                //Congr             //so here starting index-0 > end index - 4 > last index mentioned in the method will not be printed
 	    System.out.println(a);
