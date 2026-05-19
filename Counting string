@@ -223,9 +223,9 @@ public class Arraylist {
 		System.out.println(f[1]); //123
 		
 		//splitting by spaces
-		String str5 = "abc xyz";
+		String str5 = "abc xyz 113";
 		String g[] = str5.split(" ");
-		System.out.println(Arrays.toString(g));  //[abc, xyz]
+		System.out.println(Arrays.toString(g));  //[abc, xyz, 113]
 	}
 }
 
