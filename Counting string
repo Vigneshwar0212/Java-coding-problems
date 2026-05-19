@@ -155,3 +155,23 @@ public class Arraylist {
 }
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// toUpperCase / toLowerCase method
+package Selenium_test;
+
+import java.util.Locale;
+
+public class Arraylist {
+	public static void main(String[] args) {
+		
+		String str = "CoNgrAtuLatIons";
+	    System.out.println(str.toLowerCase()); //changes the string to Lower case -> congratulations
+	    System.out.println(str.toUpperCase()); //changes the string to Upper case -> CONGRATULATIONS
+	    
+	    //changing the case of the string according to the country locales
+	    System.out.println(str.toLowerCase(Locale.UK)); // Changes the string according to the locales like US,UK,China -> congratulations
+	    System.out.println(str.toUpperCase(Locale.US));
+	    
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
