@@ -122,6 +122,10 @@ public class Arraylist {
 		System.out.println(str.replace("welcome", "hello")); //hello to java programming -> "" - because string
 		System.out.println(str.replace('a', 'x'));  //welcome to jxvx progrxmming -> '' - because character
 		
+		//replacing the multiple character in a single line using replace('', '') method
+	    String s = "Banana";
+	    System.out.println(s.replace('a', 'x').replace('n', 'y'));
+		
 	    //replaceAll();
 		/* replaceAll() replaces text using Regular Expressions (Regex).*/
 		System.out.println(str2.replaceAll("[a-z]", "")); //W -> it will replace all the element within the 1st "" and replace it with the elements in the 2nd ""
