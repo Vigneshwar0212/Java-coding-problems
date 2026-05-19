@@ -175,3 +175,58 @@ public class Arraylist {
 }
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// split() method
+package Selenium_test;
+
+import java.util.Arrays;
+
+public class Arraylist {
+	public static void main(String[] args) {
+		// so if we want to split the string by the delimiter(spaces, symbols, special
+		// characters), we use this method
+		String str = "abcd@gmail.com";
+		// after splitting the string -> should be stored in an array
+		String s[] = str.split("@"); 
+		System.out.println("First part is: " + s[0]);
+		System.out.println("Second part is: " + s[1]);
+		
+	   /*output 
+		 First part is: abcd
+		 Second part is: gmail.com */
+		
+		String a[] = s[1].split("\\.");  
+		System.out.println(Arrays.toString(a)); //[gmail, com]
+		System.out.println("First part is: " + a[0]);  //First part is: gmail
+		System.out.println("Second part is: " + a[1]); //Second part is: com
+		
+		//need to be used with a prefix of \\ -> .  *  +  ?  ^  $  [ ]  ( )  { }
+		
+		//splitting a string using a single statement
+		String str1 = "abcd1234@gmail.com";
+		String x[] = str1.split("@")[1].split("\\.");
+		// splitting the string from @ -> the using the index again we are splitting the string from .
+		System.out.println(Arrays.toString(x));  //[gmail, com]
+		
+		String str2 = "12-02-2002";
+		String c[] = str2.split("-");
+		System.out.println(Arrays.toString(c));  // [12, 02, 2002]
+		
+		String str3 = "$13,78,56";
+		String d = str3.replaceAll("[$,]", "");  //137856
+		System.out.println(d);
+		
+		String str4 = "abc,xyz@123";
+		String e[] = str4.split("\\,");
+		String f[] = e[1].split("@");
+		System.out.println(e[0]); //abc
+		System.out.println(f[0]); //xyz
+		System.out.println(f[1]); //123
+		
+		//splitting by spaces
+		String str5 = "abc xyz";
+		String g[] = str5.split(" ");
+		System.out.println(Arrays.toString(g));  //[abc, xyz]
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
