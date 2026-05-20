@@ -1,4 +1,4 @@
-//String, 
+//String - Immutable
 //StringBuffer - mutable java class -> thread safe -> used for multithread program -> sligtly slower
 //StringBuilder - mutable java class -> not thread safe -> used for single thread program -> faster
 package Selenium_test;
