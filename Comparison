@@ -24,10 +24,12 @@ public class Arraylist {
 		String h = "world";
 		String i = g;
 		System.out.println((g==h)); //false
+		System.out.println((h==i)); //false -> objects are not same
 		System.out.println((g==i)); //true -> objects are same
 		System.out.println(g.equals(h)); //true
 		System.out.println(g.equals(i)); //true
 	}
 }
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
