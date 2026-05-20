@@ -1,0 +1,27 @@
+//String, 
+//StringBuffer - mutable java class -> thread safe -> used for multithread program -> sligtly slower
+//StringBuilder - mutable java class -> not thread safe -> used for single thread program -> faster
+package Selenium_test;
+
+public class Arraylist {
+	public static void main(String[] args) {
+		// String is immutable - cannot able to change the original value of str by doing some operations
+		String str = "Welcome";
+		str.concat("to java"); //this action will not impact the original value of str -> to do so we need to store it to another variable
+		System.out.println(str); //Welcome
+		
+		//StringBuffer is mutable -> the value of original string will be changed if we perform some action
+		//no need of assigning the performed operation into a new variable
+		StringBuffer sbr = new StringBuffer("Hello");
+		sbr.append(" World");
+		System.out.println(sbr); // Hello World
+		
+		//StringBuilder is mutable -> the value of original string will be changed if we perform some action
+		//no need of assigning the performed operation into a new variable
+		StringBuilder sbd = new StringBuilder("Programming");
+		sbd.append(" Language");
+		System.out.println(sbd); // Programming Language
+	}
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
