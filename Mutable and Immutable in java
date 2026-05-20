@@ -1,6 +1,7 @@
 //String - Immutable
 //StringBuffer - mutable java class -> thread safe -> used for multithread program -> sligtly slower
 //StringBuilder - mutable java class -> not thread safe -> used for single thread program -> faster
+/* StringBuilder and StringBuffer support operations like append, insert, replace, delete, reverse, substring, charAt, setCharAt, length, capacity, and conversion to String */
 package Selenium_test;
 
 public class Arraylist {
